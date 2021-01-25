@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+*{
+	font-family: poppins, sans-serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	--primary-text-color: #FFF;
+	--secondary-text-color: #FF8B00;
+	--tertiary-text-color: #939393;
+	--primary-back-color: #222;
+	--secondary-back-color: #333;
+}
+body{
+	background-color: var(--primary-back-color);
+}
+/*--------------------*/
+header{
+	width: 100%;
+	height: 80px;
+	background: var(--primary-back-color);
+	box-shadow: 0 3px 10px black;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+header h1{
+	color: var(--primary-text-color);
+	font-size: 35px;
+}
+header h1 span{
+	color: var(--secondary-text-color);
+}
+/*--------------------*/
+div#img-div{
+	height: calc(100vh - 80px);
+	display: flex;
+}
+div#img-div figure{
+	width: 80%;
+	max-width: 512px;
+	height: 90%;
+	margin: auto;
+}
+div#img-div figure img#image{
+	display: block;
+	max-width: 100%;
+	margin: auto;
+	border-radius: 10px;
+}
+div#img-div figure figcaption#img-caption{
+	color: var(--primary-text-color);
+	font-weight: 200;
+	text-align: center;
+}
+/*--------------------*/
+main#main div#cards-container{
+	width: 98%;
+	margin:auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 10px;
+
+}
+main#main div#cards-container h2#cards-container-title{
+	color: var(--primary-text-color);
+	text-align: center;
+	font-size: 30px;
+	grid-area: 1/1/1/4;
+	margin-bottom: 30px;
+}
+main#main div#cards-container div.card{
+	background: var(--secondary-back-color);
+	border-radius: 10px;
+	padding: 5px 10px;
+}
+main#main div#cards-container div.card h3.card-year{
+	color: var(--secondary-text-color);
+}
+main#main div#cards-container div.card p.card-text{
+	color: var(--tertiary-text-color);
+}
+/*--------------------*/
+main#main div#tribute-info{
+	width: 85%;
+	margin: auto;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 20px;
+}
+main#main div#tribute-info h2#tribute-info-title{
+	color: var(--primary-text-color);
+	text-align: center;
+	margin: 20px 0;
+	grid-area: 1/1/1/4;
+}
+main#main div#tribute-info div.facts-card{
+	background: var(--secondary-back-color);
+	height: 230px;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+}
+main#main div#tribute-info div.facts-card i{
+	color: var(--tertiary-text-color);
+	font-size: 45px;
+}
+main#main div#tribute-info div.facts-card p.facts-description{
+	color: var(--secondary-text-color);
+	text-align: center;
+}
+/*--------------------*/
+main#main div#phrase-container{
+	display: flex;
+}
+main#main div#phrase-container q#phrase{
+	color: var(--primary-text-color);
+	font-weight: 200;
+	text-align: center;
+	margin: 100px auto;
+}
+/*--------------------*/
+footer{
+	height: 100px;
+	box-shadow: 0 -3px 10px black;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+footer p{
+	color: #DDD;
+	margin: auto;
+}
+footer p a{
+	color: var(--secondary-text-color);
+	text-decoration: none;
+	font-weight: 600;
+}
+footer p a:hover{
+	text-decoration: underline;
+}
